@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="jTe-HJ-G34">
+                            <items>
+                                <group width="1" alignment="left" spacing="8" id="YBT-7x-JhK">
+                                    <items>
+                                        <label alignment="left" text="label1" id="yom-YL-VOT">
+                                            <fontDescription key="font" type="system" weight="black" pointSize="25"/>
+                                        </label>
+                                        <label alignment="left" text="label2" id="X5d-uX-DT4">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label alignment="left" text="label3" id="7z5-Hi-MOv"/>
+                                    </items>
+                                </group>
+                                <imageView alignment="left" id="oMW-we-adt"/>
+                                <button width="1" alignment="left" title="Button" id="nKy-2A-DW9">
+                                    <connections>
+                                        <action selector="buttonTapped" destination="AgC-eL-Hgc" id="PqC-UV-6cm"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Button" id="arM-vq-Ppo">
+                                    <connections>
+                                        <segue destination="kmg-YX-rZo" kind="modal" id="rHB-Eg-lJ4"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="label1" destination="yom-YL-VOT" id="SDN-i4-0wj"/>
+                        <outlet property="label2" destination="X5d-uX-DT4" id="V7r-qh-c0Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="15" y="46"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="7PA-ws-qf0">
+            <objects>
+                <controller id="kmg-YX-rZo">
+                    <items>
+                        <label alignment="left" text="Screen 2" id="Kk2-11-avE"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="309" y="46"/>
+        </scene>
+    </scenes>
+</document>

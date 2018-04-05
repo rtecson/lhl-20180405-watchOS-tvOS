@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dlf-MH-8Fy">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="lj3-pu-DY5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2422" y="69"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Dtq-LN-eG2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Dlf-MH-8Fy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K58-M3-w33">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ER9-Ly-SbG"/>
+                        <segue destination="rrQ-c8-ttd" kind="relationship" relationship="viewControllers" id="PDS-gI-erb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ml9-Th-m8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="69"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tHo-dD-rYQ">
+            <objects>
+                <viewController id="rrQ-c8-ttd" customClass="MyViewController" customModule="TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dDq-Xh-RfN"/>
+                        <viewControllerLayoutGuide type="bottom" id="erD-Qv-3Fg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lzF-8o-K6B">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFV-6k-PeY">
+                                <rect key="frame" x="863" y="497" width="195" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="rrQ-c8-ttd" eventType="primaryActionTriggered" id="1eN-YL-0qp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0k-ZW-3pI">
+                                <rect key="frame" x="914" y="395" width="93" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="w0k-ZW-3pI" firstAttribute="top" secondItem="dDq-Xh-RfN" secondAttribute="bottom" constant="335" id="c2o-Ns-iOC"/>
+                            <constraint firstItem="WFV-6k-PeY" firstAttribute="centerY" secondItem="lzF-8o-K6B" secondAttribute="centerY" id="c8z-2K-Myt"/>
+                            <constraint firstItem="WFV-6k-PeY" firstAttribute="centerX" secondItem="lzF-8o-K6B" secondAttribute="centerX" id="oNc-N8-XU5"/>
+                            <constraint firstItem="w0k-ZW-3pI" firstAttribute="centerX" secondItem="lzF-8o-K6B" secondAttribute="centerX" id="zES-5o-bcy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jZf-NL-Lmr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="N6z-2O-l0U"/>
+                    <connections>
+                        <outlet property="myLabel" destination="w0k-ZW-3pI" id="Aul-n2-a5x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKL-hY-sjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2422" y="1481"/>
+        </scene>
+    </scenes>
+</document>
